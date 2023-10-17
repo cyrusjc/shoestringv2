@@ -1,15 +1,23 @@
-import BasicExample from "./components/header";
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 function App() {
-  // const items = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
-  // const handleSelectItem = (item : string) => {
-  //   console.log(item)
-  // }
-
   return (
-    <div>
-      <BasicExample />
-    </div>
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
