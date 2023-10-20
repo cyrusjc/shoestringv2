@@ -3,7 +3,12 @@
     background-color: #333;
     box-sizing: border-box;
   }
+  
 
 .navbaritem{
     margin: 5px;
+}
+
+.homebox{
+  height: 80vh;
 }
