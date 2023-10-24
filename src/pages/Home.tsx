@@ -1,8 +1,8 @@
 import { Col, Container, Row } from "react-bootstrap";
-import background from "/pic.jpg";
 import Button from "react-bootstrap/Button";
 
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -12,19 +12,25 @@ function Home() {
           <div className="centerbuttons">
             <Row>
               <Col>
-                <Button className="homebutton" variant="light">
-                  Link 1
-                </Button>
+                <Link to="/Menu">
+                  <Button className="homebutton" variant="light">
+                    Menu
+                  </Button>
+                </Link>
               </Col>
               <Col>
-                <Button className="homebutton" variant="light">
-                  Link 2
-                </Button>
+                <Link to="/About">
+                  <Button className="homebutton" variant="light">
+                    About
+                  </Button>
+                </Link>
               </Col>
               <Col>
-                <Button className="homebutton" variant="light">
-                  Link 3
-                </Button>
+                <Link to="/Contact">
+                  <Button className="homebutton" variant="light">
+                    Contact
+                  </Button>
+                </Link>
               </Col>
             </Row>
           </div>
