@@ -1,6 +1,6 @@
 import Figure from "react-bootstrap/Figure";
 
-function FigureExample(desc: string) {
+function FigureExample(desc: string, pathToPic: string) {
   return (
     <Figure>
       <Figure.Image

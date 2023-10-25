@@ -19,18 +19,23 @@ function NavBar() {
           </Navbar.Brand>
           <Container>
             <Link to="/home">
-              <Nav.Link className="navbaritem" href="#home">
+              <Nav.Link className="navbaritem" href="#menu">
                 Menu
               </Nav.Link>
             </Link>
             <Link to="/about">
-              <Nav.Link className="navbaritem" href="#home">
+              <Nav.Link className="navbaritem" href="#abt">
                 About
               </Nav.Link>
             </Link>
             <Link to="/contact">
-              <Nav.Link className="navbaritem" href="#home">
+              <Nav.Link className="navbaritem" href="#cont">
                 Contact
+              </Nav.Link>
+            </Link>
+            <Link to="/gallery">
+              <Nav.Link className="navbaritem" href="#gall">
+                Gallery
               </Nav.Link>
             </Link>
             <Navbar.Toggle />
