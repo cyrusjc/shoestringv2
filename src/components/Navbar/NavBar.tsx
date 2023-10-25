@@ -1,5 +1,6 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -16,15 +17,21 @@ function NavBar() {
           React Bootstrap
         </Navbar.Brand>
         <Container>
-          <Nav.Link className="navbaritem" href="#home">
-            Link 1{" "}
-          </Nav.Link>
-          <Nav.Link className="navbaritem" href="#home">
-            Link 2{" "}
-          </Nav.Link>
-          <Nav.Link className="navbaritem" href="#home">
-            Link 3{" "}
-          </Nav.Link>
+          <Link to="/home">
+            <Nav.Link className="navbaritem" href="#home">
+              Menu
+            </Nav.Link>
+          </Link>
+          <Link to="/about">
+            <Nav.Link className="navbaritem" href="#home">
+              About
+            </Nav.Link>
+          </Link>
+          <Link to="/contact">
+            <Nav.Link className="navbaritem" href="#home">
+              Contact
+            </Nav.Link>
+          </Link>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text className="navbaritem">Phone #</Navbar.Text>
