@@ -3,13 +3,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+import NavBar from "./components/Navbar/NavBar";
+import Footer from "./components/Footer/Footer";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Menu from "./pages/Menu";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
+import Menu from "./pages/Menu/Menu";
 
 function App() {
   return (

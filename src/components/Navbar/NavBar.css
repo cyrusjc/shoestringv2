@@ -1,14 +1,13 @@
 .navbar {
-    width: 100%;
-    background-color: #333;
-    box-sizing: border-box;
-  }
-  
-
-.navbaritem{
-    margin: 5px;
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
 }
 
-.homebox{
+.navbaritem {
+  margin: 5px;
+}
+
+.homebox {
   height: 80vh;
 }
