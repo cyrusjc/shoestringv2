@@ -15,7 +15,7 @@ function NavBar() {
               height="30"
               className="d-inline-block align-top"
             />{" "}
-            React Bootstrap
+            Shoestring
           </Navbar.Brand>
           <Container>
             <Link to="/home">

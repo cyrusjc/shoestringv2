@@ -1,10 +1,31 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
+import Icons from "../Icons/Icons";
+import { FiInstagram } from "react-icons/fi";
 
 export default function FooterWithLogo() {
   return (
-    <footer className="bg-light text-center text-lg-start">
+    <footer className="text-center text-lg-start footer">
       <Container>
+        <Row>
+          <div className="logo">
+            <img
+              alt=""
+              src="/public/vite.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
+            Shoestring
+          </div>
+        </Row>
+        <Row>
+          <div className="icons">
+            <Icons url="www.google.com" icon={<FiInstagram />} />
+            <Icons url="www.google.com" icon={<FiInstagram />} />
+            <Icons url="www.google.com" icon={<FiInstagram />} />
+          </div>
+        </Row>
         <Row>
           <Col lg="6" md="12" className="mb-4 mb-md-0">
             <h5 className="text-uppercase">Footer Content</h5>
@@ -12,40 +33,6 @@ export default function FooterWithLogo() {
               Here you can use rows and columns to organize your footer content.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-          </Col>
-          <Col lg="3" md="6" className="mb-4 mb-md-0">
-            <h5 className="text-uppercase">Links</h5>
-            <ul className="list-unstyled mb-0">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </Col>
-          <Col lg="3" md="6" className="mb-4 mb-md-0">
-            <h5 className="text-uppercase">Links</h5>
-            <ul className="list-unstyled mb-0">
-              <li>
-                <a href="#!">Link 1</a>
-              </li>
-              <li>
-                <a href="#!">Link 2</a>
-              </li>
-              <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
           </Col>
         </Row>
       </Container>
