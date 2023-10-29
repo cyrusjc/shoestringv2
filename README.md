@@ -18,3 +18,5 @@ items left:
     need to write "our story" page
 
     githubtest
+
+conflict
