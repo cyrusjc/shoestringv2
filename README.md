@@ -16,8 +16,3 @@ items left:
 
     content:
     need to write "our story" page
-
-    online IDE test
-    githubtest
-
-idetest
