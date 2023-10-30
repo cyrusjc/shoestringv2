@@ -8,7 +8,7 @@ export default function FooterWithLogo() {
     <footer className="text-center text-lg-start footer">
       <Container>
         <Row>
-          <div className="logo">
+          <div className="logo text-center">
             <img
               alt=""
               src="/public/vite.svg"
@@ -20,27 +20,27 @@ export default function FooterWithLogo() {
           </div>
         </Row>
         <Row>
-          <div className="icons">
-            <Icons url="www.google.com" icon={<FiInstagram />} />
-            <Icons url="www.google.com" icon={<FiInstagram />} />
-            <Icons url="www.google.com" icon={<FiInstagram />} />
+          <div className="icons text-center">
+            <Icons url="//www.google.com" icon={<FiInstagram />} />
+            <Icons url="//www.google.com" icon={<FiInstagram />} />
+            <Icons url="//www.google.com" icon={<FiInstagram />} />
           </div>
         </Row>
         <Row>
-          <Col lg="6" md="12" className="mb-4 mb-md-0">
+          <div className="text-center">
             <h5 className="text-uppercase">Footer Content</h5>
             <p>
               Here you can use rows and columns to organize your footer content.
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </p>
-          </Col>
+          </div>
         </Row>
       </Container>
       <div
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        © {new Date().getFullYear()} Company Name
+        © {new Date().getFullYear()} Shoestring Cafe
       </div>
     </footer>
   );
