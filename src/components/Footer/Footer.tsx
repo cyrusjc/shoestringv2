@@ -1,14 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Footer.css";
 import Icons from "../Icons/Icons";
+
 import { FiInstagram } from "react-icons/fi";
+import { FaFacebook, FaYelp } from "react-icons/fa";
 
 export default function FooterWithLogo() {
   return (
-    <footer className="text-center text-lg-start footer">
-      <Container>
+    <footer className="text-center text-lg-start footer main-colour-text">
+      <Container className="text-center">
         <Row>
-          <div className="logo text-center">
+          <div className="title-row">
             <img
               alt=""
               src="/public/vite.svg"
@@ -20,28 +22,16 @@ export default function FooterWithLogo() {
           </div>
         </Row>
         <Row>
-          <div className="icons text-center">
+          <div className="icons-row">
             <Icons url="//www.google.com" icon={<FiInstagram />} />
-            <Icons url="//www.google.com" icon={<FiInstagram />} />
-            <Icons url="//www.google.com" icon={<FiInstagram />} />
+            <Icons url="//www.google.com" icon={<FaFacebook />} />
+            <Icons url="//www.google.com" icon={<FaYelp />} />
           </div>
         </Row>
-        <Row>
-          <div className="text-center">
-            <h5 className="text-uppercase">Footer Content</h5>
-            <p>
-              Here you can use rows and columns to organize your footer content.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-          </div>
+        <Row className="trademark-row">
+          <div>© {new Date().getFullYear()} Shoestring Cafe</div>
         </Row>
       </Container>
-      <div
-        className="text-center p-3"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-      >
-        © {new Date().getFullYear()} Shoestring Cafe
-      </div>
     </footer>
   );
 }

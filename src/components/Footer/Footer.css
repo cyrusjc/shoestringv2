@@ -1,6 +1,22 @@
 .footer {
   width: 100%;
-  background-color: black;
+  background-color: #1b1b1b;
   margin: 0;
   min-width: 100%;
+}
+
+.main-colour-text {
+  color: white;
+}
+
+.title-row {
+  padding: 7px;
+}
+
+.icons-row {
+  padding: 7px;
+}
+
+.trademark-row {
+  padding: 7px;
 }
