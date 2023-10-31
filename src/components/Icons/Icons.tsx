@@ -10,7 +10,7 @@ interface Props {
 function Icons({ icon, url }: Props) {
   return (
     <IconContext.Provider value={{ size: "40", className: "logo" }}>
-      <a href={url} target="_blank" rel="noopener noreferrer">
+      <a href={url} target="_blank" rel="noopener noreferrer" className="logo">
         {icon}
       </a>
     </IconContext.Provider>
