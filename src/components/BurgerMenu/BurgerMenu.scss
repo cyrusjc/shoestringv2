@@ -1,0 +1,26 @@
+
+.burger-menu {
+    .burger-menu-button {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      &__bar {
+        display: block;
+        width: 23px;
+        height: 1.5px;
+        margin-bottom: 5px;
+        background-color: #fffefe;
+      }
+    }
+  
+    .menu-items {
+      display: none;
+      color: white;
+      /* menu styling here */
+    }
+  
+    &.open .menu-items {
+      display: block;
+    }
+  }
+  

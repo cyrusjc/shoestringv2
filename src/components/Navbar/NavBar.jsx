@@ -1,51 +1,25 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
 import "./NavBar.scss";
 import { Link } from "react-router-dom";
+import BurgerMenu from "../BurgerMenu/BurgerMenu";
 
 function NavBar() {
   return (
     <>
-      <Navbar className="bg-body-tertiary">
-        <Container className="navbar">
-          <Navbar.Brand href="#home">
-            <img
-              alt=""
-              src="/public/vite.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            />{" "}
-            Shoestring
-          </Navbar.Brand>
-          <Container>
-            <Link to="/home">
-              <Nav.Link className="navbaritem" href="#menu">
-                Menu
-              </Nav.Link>
-            </Link>
-            <Link to="/about">
-              <Nav.Link className="navbaritem" href="#abt">
-                About
-              </Nav.Link>
-            </Link>
-            <Link to="/contact">
-              <Nav.Link className="navbaritem" href="#cont">
-                Contact
-              </Nav.Link>
-            </Link>
-            <Link to="/gallery">
-              <Nav.Link className="navbaritem" href="#gall">
-                Gallery
-              </Nav.Link>
-            </Link>
-            <Navbar.Toggle />
-            <Navbar.Collapse className="justify-content-end">
-              <Navbar.Text className="navbaritem">Phone #</Navbar.Text>
-              <Navbar.Text className="navbaritem">IG N SHIT</Navbar.Text>
-            </Navbar.Collapse>
-          </Container>
-        </Container>
-      </Navbar>
+      <navbar className="navbar">
+      <div className="navbar__container">
+        <Link to="/" title="home">
+          {/* <img
+            src={logo}
+            className="navbar__logo"
+            alt="logo"
+          /> */} 
+          <h1 className="logo">Shoestring Café</h1>
+        </Link>
+        {/* this eventually be a logo for the cafe */}
+        
+        <BurgerMenu/>
+      </div>
+    </navbar>
     </>
   );
 }
