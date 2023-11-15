@@ -14,10 +14,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
 body {
   margin: 0;
-  background-color:darkolivegreen;
+  background-color: rgb(107, 93, 47);
   place-items: center;
   min-width: 100%;
   min-height: 100%;

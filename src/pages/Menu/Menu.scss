@@ -1,0 +1,46 @@
+@import "../../styles/partials/mixins";
+
+$HEADER-FONT-SIZE: 15pt;
+
+$BACKGROUND-COLOUR: #1b1b1b;
+$PRIMARY-TEXT-COLOUR: white;
+
+$TOP-BOT-PADDING: 10pt;
+$SIDE-PADDING: 3pt;
+
+.menu {
+  @include flexCenter(column);
+  @include pictureTheme();
+
+  padding-top: $TOP-BOT-PADDING;
+  padding-bottom: $TOP-BOT-PADDING;
+  padding-left: $SIDE-PADDING;
+  padding-right: $SIDE-PADDING;
+}
+
+.menuBox {
+  @include flexCenter(column);
+
+  box-shadow: 10px 10px darkgreen;
+  color: $PRIMARY-TEXT-COLOUR;
+  max-width: 900px;
+  min-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: $BACKGROUND-COLOUR;
+}
+
+.menuCategory {
+  @include flexLeft(column);
+  font-size: $HEADER-FONT-SIZE;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  border-bottom: 1px solid white;
+}

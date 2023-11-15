@@ -11,3 +11,22 @@
     @content;
   }
 }
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin flexLeft($direction) {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: $direction;
+}
+
+@mixin pictureTheme() {
+  background-image: BACKGROUND-IMAGE;
+  background-size: BACKGROUND-SIZE;
+}
