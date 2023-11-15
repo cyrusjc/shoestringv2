@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 
-import "./Home.css";
+import "./Home.scss";
 import { Link } from "react-router-dom";
 
 function Home() {
