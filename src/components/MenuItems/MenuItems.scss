@@ -1,0 +1,40 @@
+@import "../../styles/partials/mixins";
+@import "../../pages/Menu/Menu.scss";
+
+$text-item-color: $PRIMARY-TEXT-COLOUR;
+$text-desc-color: $PRIMARY-TEXT-COLOUR;
+$text-price-color: $PRIMARY-TEXT-COLOUR;
+
+$primary-text-size: 10pt;
+$text-item-size: 10pt;
+$text-desc-size: 10pt;
+$text-price-size: 11pt;
+
+.menuComp {
+  font-size: $primary-text-size;
+  display: flex;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.nameDesc {
+  @include flexLeft(column);
+}
+
+.menuItemName {
+  @include flexLeft(column);
+  color: $text-item-color;
+  font-size: $text-item-size;
+}
+.menuItemDesc {
+  @include flexLeft(column);
+  color: $text-desc-color;
+  font-size: $text-desc-size;
+}
+
+.menuItemPrice {
+  justify-content: left;
+  align-items: left;
+  color: $text-price-color;
+  font-size: $text-price-size;
+}

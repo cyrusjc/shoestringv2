@@ -1,6 +1,7 @@
+@import "../../styles/partials/mixins";
+
 .background {
-  background-image: url("/pic.jpg");
-  background-size: cover;
+  @include pictureTheme();
 }
 
 .centerbuttons {

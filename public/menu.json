@@ -2,6 +2,10 @@
     "range": "Sheet1!A2:C70",
     "majorDimension": "ROWS",
     "values": [
+        [],
+        [
+            "starter"
+        ],
         [
             "shoestring potatoes",
             "homemade crispy fries",
