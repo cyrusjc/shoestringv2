@@ -1,7 +1,14 @@
+$TOP-BOT-PADDING: 10pt;
+$SIDE-PADDING: 10pt;
+
 .image-container {
   object-fit: cover;
   width: 90%;
   height: auto;
+  padding-top: $TOP-BOT-PADDING;
+  padding-bottom: $TOP-BOT-PADDING;
+  padding-left: $SIDE-PADDING;
+  padding-right: $SIDE-PADDING;
 }
 
 .image {
