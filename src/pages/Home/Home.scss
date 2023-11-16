@@ -1,9 +1,5 @@
 @import "../../styles/partials/mixins";
 
-.background {
-  @include pictureTheme();
-}
-
 .centerbuttons {
   display: flex;
   justify-content: center;

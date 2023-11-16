@@ -25,8 +25,3 @@
   align-items: left;
   flex-direction: $direction;
 }
-
-@mixin pictureTheme() {
-  background-image: BACKGROUND-IMAGE;
-  background-size: BACKGROUND-SIZE;
-}
