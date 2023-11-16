@@ -7,34 +7,16 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <>
-      <div className="background">
-        <Container className="homebox">
-          <div className="centerbuttons">
-            <Row>
-              <Col>
-                <Link to="/Menu">
-                  <Button className="homebutton" variant="light">
-                    Menu
-                  </Button>
-                </Link>
-              </Col>
-              <Col>
-                <Link to="/About">
-                  <Button className="homebutton" variant="light">
-                    About
-                  </Button>
-                </Link>
-              </Col>
-              <Col>
-                <Link to="/Contact">
-                  <Button className="homebutton" variant="light">
-                    Contact
-                  </Button>
-                </Link>
-              </Col>
-            </Row>
-          </div>
-        </Container>
+      <div>
+        <div className="landing background">
+          <Container>
+            <div className="content divCenter">
+              <h1>The Shoestring Cafe</h1>
+
+              <p>Some title text</p>
+            </div>
+          </Container>
+        </div>
       </div>
     </>
   );
