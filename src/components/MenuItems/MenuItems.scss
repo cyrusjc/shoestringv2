@@ -1,14 +1,9 @@
 @import "../../styles/partials/mixins";
-@import "../../pages/Menu/Menu.scss";
+@import "../../styles/partials/variables";
 
 $text-item-color: $PRIMARY-TEXT-COLOUR;
 $text-desc-color: $PRIMARY-TEXT-COLOUR;
 $text-price-color: $PRIMARY-TEXT-COLOUR;
-
-$primary-text-size: 10pt;
-$text-item-size: 10pt;
-$text-desc-size: 10pt;
-$text-price-size: 11pt;
 
 .menuComp {
   font-size: $primary-text-size;

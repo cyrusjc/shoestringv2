@@ -1,0 +1,10 @@
+@import "../partials/mixins";
+
+body {
+  background-image: url("/pic.jpg");
+  background-size: cover;
+}
+
+.divCenter {
+  @include flexCenter(column);
+}

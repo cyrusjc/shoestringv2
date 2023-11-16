@@ -22,7 +22,7 @@ function Menu() {
     fetchData();
   }, []);
   return (
-    <div className="menu background">
+    <div className="divCenter menu">
       <div className="menuBox">
         <h2>Menu</h2>
         {jsonData && jsonData.values && (

@@ -1,17 +1,12 @@
 @import "../../styles/partials/mixins";
 
-$HEADER-FONT-SIZE: 15pt;
-
-$BACKGROUND-COLOUR: #1b1b1b;
-$PRIMARY-TEXT-COLOUR: white;
+$background-colour: #1b1b1b;
+$background-shadow-color: grey;
 
 $TOP-BOT-PADDING: 10pt;
 $SIDE-PADDING: 3pt;
 
 .menu {
-  @include flexCenter(column);
-  @include pictureTheme();
-
   padding-top: $TOP-BOT-PADDING;
   padding-bottom: $TOP-BOT-PADDING;
   padding-left: $SIDE-PADDING;
@@ -20,19 +15,17 @@ $SIDE-PADDING: 3pt;
 
 .menuBox {
   @include flexCenter(column);
-
-  box-shadow: 10px 10px darkgreen;
-  color: $PRIMARY-TEXT-COLOUR;
+  box-shadow: $background-shadow-color;
   max-width: 900px;
   min-width: 300px;
   border: 2px solid #ccc;
   border-radius: 8px;
-  background-color: $BACKGROUND-COLOUR;
+  background-color: $background-colour;
 }
 
 .menuCategory {
   @include flexLeft(column);
-  font-size: $HEADER-FONT-SIZE;
+  // font-size: $HEADER-FONT-SIZE;
 }
 
 ul {

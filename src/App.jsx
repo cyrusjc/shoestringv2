@@ -2,6 +2,8 @@ import "./App.scss";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/globals/global-styles.scss";
+import "./styles/globals/typography.scss";
 
 import NavBar from "./components/Navbar/NavBar";
 import Footer from "./components/Footer/Footer";
