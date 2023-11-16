@@ -1,12 +1,17 @@
-import Figure from "react-bootstrap/Figure";
+import Image from "react-bootstrap/Image";
 
-function FigureExample(desc, pathToPic) {
+import "./Figure.scss";
+
+function Fluid({ path }) {
   return (
-    <Figure>
-      <Figure.Image width={171} height={180} alt="171x180" src={pathToPic} />
-      <Figure.Caption>{desc}</Figure.Caption>
-    </Figure>
+    <div className="divCenter">
+      <div className="image-container divCenter">
+        <div className="image">
+          <Image src={path} fluid />
+        </div>
+      </div>
+    </div>
   );
 }
 
-export default FigureExample;
+export default Fluid;
