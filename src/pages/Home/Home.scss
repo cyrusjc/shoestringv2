@@ -24,3 +24,24 @@
   transform: translate(-50%, -50%);
   /* Add more styles for your content */
 }
+
+.storyContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin: auto;
+  padding: 2rem;
+}
+
+.menuButton {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
