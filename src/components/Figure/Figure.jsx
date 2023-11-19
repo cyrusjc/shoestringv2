@@ -4,8 +4,8 @@ import "./Figure.scss";
 
 function Fluid({ path }) {
   return (
-    <div className="divCenter">
-      <div className="image-container divCenter">
+    <div className="">
+      <div className="image-container">
         <div className="image">
           <Image src={path} fluid />
         </div>

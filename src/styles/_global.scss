@@ -1,0 +1,10 @@
+@import "./partials/mixins";
+@import "./partials/variables";
+
+.divCenter {
+  @include flexCenter(column);
+}
+
+.maxWidth {
+  max-width: $max-width;
+}

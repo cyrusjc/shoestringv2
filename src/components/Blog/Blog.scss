@@ -1,15 +1,28 @@
-$TOP-BOT-PADDING: 10pt;
-$SIDE-PADDING: 10pt;
+@use "../../styles/partials/mixins" as *;
+@import "../../styles/partials/variables";
 
 .blog-container {
-  max-width: 640px;
+  max-width: $tablet-breakpoint;
   min-width: 320px;
-  width: 100%;
 }
 
 .blog-post {
-  padding-top: $TOP-BOT-PADDING;
-  padding-bottom: $TOP-BOT-PADDING;
-  padding-left: $SIDE-PADDING;
-  padding-right: $SIDE-PADDING;
+  padding: 1rem;
+}
+
+p {
+  font-family: "Jost";
+  font-size: 16px;
+  line-height: 1.66;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+@include desktop {
+  .blog-container {
+    width: 40%;
+  }
 }

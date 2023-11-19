@@ -1,16 +1,20 @@
-$TOP-BOT-PADDING: 10pt;
-$SIDE-PADDING: 10pt;
+@use "../../styles/partials/mixins" as *;
+@import "../../styles/partials/variables";
 
 .image-container {
   object-fit: cover;
-  width: 90%;
-  height: auto;
-  padding-top: $TOP-BOT-PADDING;
-  padding-bottom: $TOP-BOT-PADDING;
-  padding-left: $SIDE-PADDING;
-  padding-right: $SIDE-PADDING;
+  min-width: 320px;
+  max-width: $tablet-breakpoint;
+  padding: 1rem;
 }
 
 .image {
   object-fit: cover;
+}
+
+@include desktop {
+  .image-container {
+    max-width: 600px;
+    padding: 1rem;
+  }
 }
