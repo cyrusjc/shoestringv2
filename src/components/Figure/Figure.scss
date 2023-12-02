@@ -11,10 +11,3 @@
 .image {
   object-fit: cover;
 }
-
-@include desktop {
-  .image-container {
-    max-width: 600px;
-    padding: 1rem;
-  }
-}

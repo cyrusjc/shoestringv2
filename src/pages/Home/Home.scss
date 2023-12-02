@@ -23,6 +23,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /* Add more styles for your content */
+
+  h1 {
+    font-family: Merienda;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  p {
+    margin: auto;
+    padding: 1px;
+  }
 }
 
 .storyContainer {
@@ -34,6 +47,14 @@
 
   margin: auto;
   padding: 2rem;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 .menuButton {
@@ -44,4 +65,22 @@
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
+}
+
+divCenter {
+  text-align: center;
+}
+
+.aboutContainer {
+  display: flex;
+  padding: 5rem 0;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+@include desktop {
+  .aboutContainer {
+    width: 40%;
+  }
 }
