@@ -20,9 +20,3 @@ p {
 h3 {
   font-size: 32px;
 }
-
-@include desktop {
-  .blog-container {
-    width: 40%;
-  }
-}

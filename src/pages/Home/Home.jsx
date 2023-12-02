@@ -9,15 +9,15 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const blogPost = {
-    title: "Lorem Ipsum",
+    title: "About Shoestring",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Welcome to our family-owned gem, Shoestring Cafe, nestled in the heart of Richmond, British Columbia.\n As a family, we have a passion for food and a commitment to providing our guests with a unique dining experience. Our menu is a culinary journey, featuring dishes crafted with fresh, locally-sourced ingredients. Each dish we serve is a celebration of our love for food and our desire to share this with our guests.",
   };
 
   const blogPost2 = {
     title: "Lorem Ipsum",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "The ambiance at Shoestring Cafe is warm and inviting, reflecting our family’s hospitality. Whether you’re looking for a cozy spot for a meal or a venue to celebrate special occasions, Shoestring Cafe is the perfect place. Experience the joy of dining at Shoestring Cafe, where good food and great experiences come together in a family-friendly environment. We look forward to welcoming you to our family!",
   };
 
   const picture1 = "/temp3.jpg";
@@ -29,13 +29,13 @@ function Home() {
         <div className="landing background">
           <Container>
             <div className="content divCenter">
-              <h1>The Shoestring Cafe</h1>
+              <h1>The Shoestring Café</h1>
 
-              <p>Some title text</p>
-              <Link to="/Menu">
+              <p>Subsidiary of Youngstown sardines</p>
+              <Link to="/Contact">
                 <Button variant="secondary" className="menuButton">
                   {" "}
-                  View our menu
+                  <p>View our menu</p>
                 </Button>
               </Link>
             </div>
@@ -43,10 +43,18 @@ function Home() {
         </div>
       </div>
       <div className="storyContainer divCenter maxWidth">
-        <Blog {...blogPost} />
-        <Fluid path={picture1} />
-        <Fluid path={picture2} />
-        <Blog {...blogPost2} />
+        <div className="aboutContainer">
+          <Blog {...blogPost} />
+        </div>
+        <div className="aboutContainer">
+          <Fluid path={picture1} />
+        </div>
+        <div className="aboutContainer">
+          <Fluid path={picture2} />
+        </div>
+        <div className="aboutContainer">
+          <Blog {...blogPost2} />
+        </div>
       </div>
     </>
   );
