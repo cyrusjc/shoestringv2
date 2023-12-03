@@ -2,8 +2,10 @@
 @import "../../styles/partials/variables";
 
 .blog-container {
-  max-width: $tablet-breakpoint;
+  max-width: $desktop-breakpoint;
   min-width: 320px;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .blog-post {
@@ -11,7 +13,7 @@
 }
 
 p {
-  font-family: "Jost";
+  font-family: Jost;
   font-size: 16px;
   line-height: 1.66;
   font-weight: 400;
