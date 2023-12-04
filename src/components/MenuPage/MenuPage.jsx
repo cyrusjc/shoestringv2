@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import MenuItems from "../MenuItems/MenuItems";
 
+import "./MenuPage.scss";
+
 const MenuPage = ({ filePath }) => {
   console.log({ filePath });
   const [jsonData, setJsonData] = useState(null);
@@ -34,7 +36,7 @@ const MenuPage = ({ filePath }) => {
                     price={item[2]}
                   />
                 ) : (
-                  <h3 className="menuCategory">{item[0]}</h3>
+                  <h5 className="menuCategory">{item[0]}</h5>
                 )}
               </li>
             ))}

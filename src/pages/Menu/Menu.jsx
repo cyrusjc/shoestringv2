@@ -16,12 +16,12 @@ function Menu() {
         onClick={() => setFilePath("/dinnerMenu.json")}
       >
         {" "}
-        <p>Dinner Menu</p>
+        <p>Dinner</p>
       </Button>
 
       <Button variant="secondary" className="menuButton">
         {" "}
-        <p>Lunch Menu</p>
+        <p>Lunch</p>
       </Button>
 
       <MenuPage filePath={filePath} />

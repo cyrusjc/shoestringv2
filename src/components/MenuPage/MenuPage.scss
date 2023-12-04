@@ -1,7 +1,9 @@
 @import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
 
-$background-colour: #1b1b1b;
+$background-colour: #fdfaf5;
 $background-shadow-color: grey;
+$text-color: #000000;
 
 $TOP-BOT-PADDING: 10pt;
 $SIDE-PADDING: 3pt;
@@ -11,6 +13,8 @@ $SIDE-PADDING: 3pt;
   padding-bottom: $TOP-BOT-PADDING;
   padding-left: $SIDE-PADDING;
   padding-right: $SIDE-PADDING;
+
+  color: $menu-text-item-color;
 }
 
 .menuBox {
@@ -18,14 +22,20 @@ $SIDE-PADDING: 3pt;
   box-shadow: $background-shadow-color;
   max-width: 900px;
   min-width: 300px;
+  padding-top: 1rem;
   border: 2px solid #ccc;
   border-radius: 8px;
-  background-color: $background-colour;
-}
 
-.menuCategory {
-  @include flexLeft(column);
-  // font-size: $HEADER-FONT-SIZE;
+  background-color: $menu-background-colour;
+
+  color: $menu-text-item-color;
+  font-size: $text-item-size;
+
+  h5 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: $menu-text-item-color;
+  }
 }
 
 ul {

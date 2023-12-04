@@ -1,35 +1,22 @@
 @import "../../styles/partials/mixins";
 @import "../../styles/partials/variables";
 
-$text-item-color: $PRIMARY-TEXT-COLOUR;
-$text-desc-color: $PRIMARY-TEXT-COLOUR;
-$text-price-color: $PRIMARY-TEXT-COLOUR;
-
 .menuComp {
-  font-size: $primary-text-size;
   display: flex;
-  padding: 2px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .nameDesc {
-  @include flexLeft(column);
+  padding: 1rem;
+  align-items: start;
+  text-align: left;
 }
 
-.menuItemName {
-  @include flexLeft(column);
-  color: $text-item-color;
-  font-size: $text-item-size;
-}
 .menuItemDesc {
-  @include flexLeft(column);
-  color: $text-desc-color;
-  font-size: $text-desc-size;
+  font-size: 0.5;
 }
 
 .menuItemPrice {
-  justify-content: right;
-  align-items: right;
-  color: $text-price-color;
-  font-size: $text-price-size;
+  margin: auto 0;
+  padding-right: 1rem;
 }
