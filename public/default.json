@@ -1,0 +1,110 @@
+{
+    "range": "Sheet1!A2:C70",
+    "majorDimension": "ROWS",
+    "values": [
+        [],
+        [
+            "pasta"
+        ],
+        [
+            "pan fried linguine",
+            "olive oil, jalapeno, chinese black bean, garlic (chicken or prawns)",
+            "25"
+        ],
+        [
+            "tomato vegetable linguine",
+            "seasonal vegetables, white wine, parmesan",
+            "18"
+        ],
+        [
+            "tomato chicken linguine",
+            "grilled chicken breast, white wine, parmesan",
+            "22"
+        ],
+        [
+            "tomato shrimp linguine",
+            "tiger prawns, white wine, parmesan",
+            "24"
+        ],
+        [
+            "vegetable fettuccine alfredo",
+            "seasonal vegetables, cream, white wine, parmesan",
+            "19"
+        ],
+        [
+            "cajun chicken alfredo",
+            "grilled blackened chicken breast, fettuccine, cream, parmesan",
+            "23"
+        ],
+        [
+            "seafood alfredo",
+            "tiger prawns, sea scallop, wild salmon, cream, parmesan",
+            "25"
+        ],
+        [],
+        [],
+        [
+            "main"
+        ],
+        [
+            "butter chicken",
+            "spicy tomato curry, diced chicken breast, rice, naan, seasonal vegetables",
+            "26"
+        ],
+        [
+            "seafood curry",
+            "coconut curry, tiger prawns, sea scallops, wild salmon, rice, naan, seasonal vegetables",
+            "29"
+        ],
+        [
+            "grilled rack of pork",
+            "free-range, pot wine sauce, mashed potatoes, carrot puree, seasonal vegetables",
+            "32"
+        ],
+        [
+            "pan roasted duck breast",
+            "fig jus, carrot puree, mashed potatoes, seasonal vegetables",
+            "33"
+        ],
+        [
+            "saffron seafood stew",
+            "jumbo tiger prawn, sea scallops, wild salmon, cream, white wine, seasonal vegetables",
+            "35"
+        ],
+        [
+            "grilled aged new york steak",
+            "port wine sauce, carrot puree, mashed potatoes, seasonal vegetables",
+            "37"
+        ],
+        [
+            "grilled aged rib-eye steak",
+            "cognac demi glace, carrot puree, mashed potatoes, seasonal vegetables",
+            "39"
+        ],
+        [
+            "roasted rack of lamb",
+            "brandy sauce, carrot puree, mashed potatoes, seasonal vegetables",
+            "45"
+        ],
+        [],
+        [],
+        [
+            "dessert"
+        ],
+        [
+            "orange flan",
+            "egg custard, vanilla, caramel, triple sec",
+            "9"
+        ],
+        [
+            "strawbery cheesecake",
+            "strawberries, blueberries and mango puree",
+            "11"
+        ],
+        [
+            "chocolate souffle",
+            "dark chocolate, brandy, vanilla ice cream",
+            "11"
+        ]
+    ]
+}
