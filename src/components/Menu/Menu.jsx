@@ -1,14 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import MenuItems from "../../components/MenuItems/MenuItems";
-import { Button, Container } from "react-bootstrap";
-
-import "./Menu.scss";
-
-function Menu() {
+const Menu = ({}) => {
   const [jsonData, setJsonData] = useState(null);
-
-  const [showDinnerMenu, setShowDinnerMenu] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -23,23 +16,10 @@ function Menu() {
 
     fetchData();
   }, []);
-  return (
-    <div className="divCenter menu">
-      <Button
-        variant="secondary"
-        className="menuButton"
-        onClick={() => setShowDinnerMenu(!showDinnerMenu)}
-      >
-        {" "}
-        <p>Dinner Menu</p>
-      </Button>
-      <Button variant="secondary" className="menuButton">
-        {" "}
-        <p>Lunch Menu (not yet avail)</p>
-      </Button>
 
+  return (
+    <div>
       <div className="menuBox">
-        <h2>Menu</h2>
         {showDinnerMenu && jsonData && jsonData.values && (
           <ul>
             {jsonData.values
@@ -62,6 +42,6 @@ function Menu() {
       </div>
     </div>
   );
-}
+};
 
 export default Menu;
