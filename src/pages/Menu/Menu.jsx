@@ -6,25 +6,35 @@ import "./Menu.scss";
 import MenuPage from "../../components/MenuPage/MenuPage";
 
 function Menu() {
-  const [filePath, setFilePath] = useState("");
+  const [filePath, setFilePath] = useState("/dinnerMenu.json");
+  const [timePeriod, setTimePeriod] = useState("Dinner");
+
+  const handleClick = (path, period) => () => {
+    setFilePath(path);
+    setTimePeriod(period);
+  };
 
   return (
     <div className="divCenter menu">
-      <Button
-        variant="secondary"
-        className="menuButton"
-        onClick={() => setFilePath("/dinnerMenu.json")}
-      >
-        {" "}
-        <p>Dinner</p>
-      </Button>
+      <div className="buttonGroup">
+        <Button
+          variant="secondary"
+          className="menuButton"
+          onClick={handleClick("/dinnerMenu.json", "Dinner")}
+        >
+          <p>Dinner</p>
+        </Button>
 
-      <Button variant="secondary" className="menuButton">
-        {" "}
-        <p>Lunch</p>
-      </Button>
+        <Button variant="secondary" className="menuButton">
+          <p>Lunch (tba)</p>
+        </Button>
 
-      <MenuPage filePath={filePath} />
+        <Button variant="secondary" className="menuButton">
+          <p>Open Table (tba)</p>
+        </Button>
+      </div>
+
+      <MenuPage filePath={filePath} timePeriod={timePeriod} />
     </div>
   );
 }

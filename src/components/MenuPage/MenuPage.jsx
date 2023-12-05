@@ -3,8 +3,7 @@ import MenuItems from "../MenuItems/MenuItems";
 
 import "./MenuPage.scss";
 
-const MenuPage = ({ filePath }) => {
-  console.log({ filePath });
+const MenuPage = ({ filePath, timePeriod }) => {
   const [jsonData, setJsonData] = useState(null);
 
   useEffect(() => {
@@ -23,13 +22,14 @@ const MenuPage = ({ filePath }) => {
 
   return (
     <div className="menuBox">
+      <h2>{timePeriod}</h2>
       {jsonData && jsonData.values && (
         <ul>
           {jsonData.values
             .filter((item) => item.length > 0)
             .map((item, index) => (
               <li key={index}>
-                {item[1] ? (
+                {item.length > 2 ? (
                   <MenuItems
                     name={item[0]}
                     description={item[1]}

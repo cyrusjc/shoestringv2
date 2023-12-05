@@ -1,49 +1,77 @@
 @import "../../styles/partials/mixins";
 @import "../../styles/partials/variables";
 
-$background-colour: #fdfaf5;
-$background-shadow-color: grey;
-$text-color: #000000;
-
-$TOP-BOT-PADDING: 10pt;
-$SIDE-PADDING: 3pt;
-
 .menu {
-  padding-top: $TOP-BOT-PADDING;
-  padding-bottom: $TOP-BOT-PADDING;
-  padding-left: $SIDE-PADDING;
-  padding-right: $SIDE-PADDING;
-
   color: $menu-text-item-color;
 }
 
 .menuBox {
-  @include flexCenter(column);
-  box-shadow: $background-shadow-color;
+  box-shadow: 20px 10px 10px $background-shadow-color;
+
   max-width: 900px;
   min-width: 300px;
   padding-top: 1rem;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+
+  margin: $menu-page-margin;
 
   background-color: $menu-background-colour;
-
   color: $menu-text-item-color;
-  font-size: $text-item-size;
+
+  font-family: $menu-font;
+
+  .menuItemName {
+    p {
+      font-weight: $menu-text-item-weight;
+      font-size: $menu-text-item-size;
+      margin: 0;
+    }
+  }
+
+  .menuItemDesc {
+    p {
+      font-weight: $menu-text-desc-weight;
+      font-size: $menu-text-desc-size;
+    }
+  }
+
+  .menuItemPrice {
+    margin: auto 0;
+    padding-right: $menu-items-left-right-padding;
+    padding-left: $menu-items-left-right-padding;
+    p {
+      font-weight: $menu-text-price-weight;
+      font-size: $menu-text-price-size;
+    }
+  }
+
+  .menuComp {
+    padding-left: $menu-items-left-right-padding;
+  }
+
+  .menuCategory {
+    align-items: start;
+    padding-left: $menu-items-left-right-padding;
+    font-size: $menu-category-text-size;
+
+    font-size: $menu-category-text-size;
+    font-weight: $menu-category-text-weight;
+  }
 
   h5 {
-    margin-bottom: 0;
-    font-size: 2rem;
+    font-family: "SometypeMono";
+    padding-bottom: $menu-category-up-down-padding;
+    padding-top: $menu-category-up-down-padding;
+
     color: $menu-text-item-color;
+  }
+
+  h2 {
+    border-bottom: 1px solid white;
+    font-size: $menu-title-font-size;
+    font-weight: $menu-title-font-weight;
   }
 }
 
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  border-bottom: 1px solid white;
 }

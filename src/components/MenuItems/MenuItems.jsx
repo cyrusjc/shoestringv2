@@ -7,10 +7,16 @@ function MenuItems({ name, description, price }) {
     <>
       <div className="menuComp">
         <span className="nameDesc">
-          <div className="menuItemName">{name}</div>
-          <div className="menuItemDesc">{description}</div>
+          <div className="menuItemName">
+            <p> {name}</p>
+          </div>
+          <div className="menuItemDesc">
+            <p>{description} </p>
+          </div>
         </span>
-        <span className="menuItemPrice"> {price}</span>
+        <span className="menuItemPrice">
+          <p>{price} </p>
+        </span>
       </div>
     </>
   );

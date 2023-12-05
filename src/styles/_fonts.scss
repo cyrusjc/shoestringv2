@@ -1,34 +1,20 @@
 @font-face {
-  font-family: "Merienda";
-  src: url(../assets/fonts/Merienda-VariableFont_wght.woff2)
-    format("woff2-variations");
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-var.woff2) format("woff2-variations");
   font-weight: 0 900;
   font-display: swap;
 }
 
-// opsz: 7 72;
-// wght: 200 900;
 @font-face {
-  font-family: "Literata";
-  src: url(../assets/fonts/Literata-VariableFont_opsz\wght.woff2)
-    format("woff2-variations");
-
-  font-weight: 2 900;
-  font-optical-sizing: 2 72;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "AlegreyaSans-Regular";
-  src: url(../assets/fonts/AlegreyaSans-Regular.woff);
+  font-family: "Bebas Neue";
+  src: url(../assets/fonts/BebasNeue-Regular.ttf);
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Markazi";
-  src: url(../assets/fonts/MarkaziText-VariableFont_wght.woff2)
-    format("woff2-variations");
+  font-family: "SometypeMono";
+  src: url(../assets/fonts/SometypeMono.woff2) format("woff2-variations");
   font-weight: 0 900;
   font-display: swap;
 }

@@ -6,19 +6,19 @@
   min-width: 320px;
   padding-left: 4rem;
   padding-right: 4rem;
+
+  p {
+    font-family: "Inter";
+    font-size: 1rem;
+    line-height: 1.66;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 .blog-post {
   padding: 1rem;
-}
-
-p {
-  font-family: Jost;
-  font-size: 16px;
-  line-height: 1.66;
-  font-weight: 400;
-}
-
-h3 {
-  font-size: 32px;
 }

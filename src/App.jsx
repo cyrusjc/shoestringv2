@@ -11,6 +11,8 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Menu from "./pages/Menu/Menu";
 
+import "./styles/index.scss";
+
 function App() {
   return (
     <>

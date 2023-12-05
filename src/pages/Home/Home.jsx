@@ -33,8 +33,14 @@ function Home() {
               <div className="content divCenter">
                 <h1>The Shoestring Café</h1>
 
-                <p>Subsidiary of Youngstown sardines</p>
-                <Link to="/Contact">
+                <p>
+                  Welcome to Shoestring Cafe, a family owned restaurant nestled
+                  in the industrial area of Richmond. Our menu features dishes
+                  crafted with fresh, locally-sourced ingredients. Each dish we
+                  serve is a celebration of our love for food and our desire to
+                  share this with our guests.
+                </p>
+                <Link to="/Menu">
                   <Button variant="secondary" className="menuButton">
                     {" "}
                     <p>View our menu</p>
@@ -46,15 +52,9 @@ function Home() {
         </div>
       </div>
       <div className="storyContainer divCenter maxWidth">
-        <div className="aboutContainer">
-          <Blog {...blogPost} />
-        </div>
-        <div className="aboutContainer">
-          <Blog {...blogPost2} />
-        </div>
-        <div className="aboutContainer">
+        {/* <div className="aboutContainer">
           <Fluid path={picture1} />
-        </div>
+        </div> */}
         <div className="information">
           <h3>Hours and Location</h3>
           <div>
