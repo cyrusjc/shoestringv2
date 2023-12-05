@@ -57,18 +57,20 @@
     font-weight: $menu-category-text-weight;
   }
 
-  h5 {
-    font-family: "SometypeMono";
-    padding-bottom: $menu-category-up-down-padding;
-    padding-top: $menu-category-up-down-padding;
-
-    color: $menu-text-item-color;
-  }
-
   h2 {
+    font-family: $menu-title-font;
     border-bottom: 1px solid white;
     font-size: $menu-title-font-size;
     font-weight: $menu-title-font-weight;
+
+    // padding-bottom: $menu-category-up-down-padding;
+    padding-top: $menu-category-up-down-padding;
+  }
+
+  h5 {
+    font-family: $menu-title-font;
+    // padding-bottom: $menu-category-up-down-padding;
+    padding-top: $menu-category-up-down-padding;
   }
 }
 
