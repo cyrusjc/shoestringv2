@@ -16,25 +16,27 @@ function Menu() {
 
   return (
     <div className="divCenter menu">
-      <div className="buttonGroup">
-        <Button
-          variant="secondary"
-          className="menuButton"
-          onClick={handleClick("/dinnerMenu.json", "Dinner")}
-        >
-          <p>Dinner</p>
-        </Button>
+      <div className="menuBox">
+        <div className="buttonGroup">
+          <Button
+            variant="secondary"
+            className={`menuButton ${timePeriod === "Dinner" ? "active" : ""}`}
+            onClick={handleClick("/dinnerMenu.json", "Dinner")}
+          >
+            <p>Dinner</p>
+          </Button>
 
-        <Button variant="secondary" className="menuButton">
-          <p>Lunch (tba)</p>
-        </Button>
+          <Button variant="secondary" className="menuButton">
+            <p>Lunch </p>
+          </Button>
 
-        <Button variant="secondary" className="menuButton">
-          <p>Open Table (tba)</p>
-        </Button>
+          <Button variant="secondary" className="menuButton">
+            <p>Open Table</p>
+          </Button>
+        </div>
+
+        <MenuPage filePath={filePath} timePeriod={timePeriod} />
       </div>
-
-      <MenuPage filePath={filePath} timePeriod={timePeriod} />
     </div>
   );
 }

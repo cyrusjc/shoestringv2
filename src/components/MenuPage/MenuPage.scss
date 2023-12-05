@@ -6,11 +6,10 @@
 }
 
 .menuBox {
-  box-shadow: 20px 10px 10px $background-shadow-color;
+  box-shadow: 30px 30px 0px $background-shadow-color;
 
   max-width: 900px;
   min-width: 300px;
-  padding-top: 1rem;
 
   margin: $menu-page-margin;
 
@@ -63,8 +62,10 @@
     font-size: $menu-title-font-size;
     font-weight: $menu-title-font-weight;
 
-    // padding-bottom: $menu-category-up-down-padding;
     padding-top: $menu-category-up-down-padding;
+
+    align-self: flex-start;
+    display: inline-block;
   }
 
   h5 {

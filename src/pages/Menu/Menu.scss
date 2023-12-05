@@ -1,4 +1,5 @@
 @import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
 
 $background-colour: #1b1b1b;
 $background-shadow-color: grey;
@@ -18,8 +19,6 @@ $SIDE-PADDING: 3pt;
   box-shadow: $background-shadow-color;
   max-width: 900px;
   min-width: 300px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
   background-color: $background-colour;
 }
 
@@ -34,6 +33,25 @@ ul {
   padding: 0;
 }
 
-h2 {
-  border-bottom: 1px solid white;
+.buttonGroup {
+  display: flex;
+  width: 100%;
+  // justify-content: space-around;
+}
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5 rem;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  p {
+    margin: 0;
+  }
+
+  &.active {
+    background-color: $menu-background-colour;
+  }
 }
