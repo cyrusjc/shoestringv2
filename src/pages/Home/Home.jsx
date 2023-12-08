@@ -15,24 +15,26 @@ function Home() {
             celebration of our love for food and our desire to share this with
             our guests.
           </p>
-          <Link to="/Menu">View our menu</Link>
+          <Link to="/Menu">
+            <button className="container__button">View our menu</button>
+            </Link>
         </div>
-      </div>
-
       {/* <div className="information">
-          <h3>Hours and Location</h3>
-          <div>
-            <h4>Dinner</h4>
-            <p> 10pm 10pm</p>
-            <h4>Lunch</h4>
-            <p> Currently Closed </p>
+          <h2>Hours and Location</h2>
+            <h3>Dinner</h3>
+            <p>10pm</p>
+            <h3>Lunch</h3>
+            <p>Currently Closed</p>
 
-            <h4>Contact </h4>
-            <p> 604 232-0900 | shoestringcafe@gmail.com</p>
-            <h3>Reservations</h3>
+            <h2>Contact </h2>
+            <p> 604 232-0900</p>
+            <p>shoestringcafe@gmail.com</p>
+            
+            <h2>Reservations</h2>
             <p> Please call our phone number to make reservations.</p>
-          </div>
-        </div> */}
+          </div> */}
+        </div>
+     
     </>
   );
 }

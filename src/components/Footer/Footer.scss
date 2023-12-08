@@ -20,3 +20,16 @@
 .trademark-row {
   padding: 7px;
 }
+
+
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1b1b;
+  padding: 2rem;
+  color: white;
+  gap: 1rem;
+  width: 100%;
+}

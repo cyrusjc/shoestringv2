@@ -7,6 +7,21 @@ import { FaFacebook, FaYelp } from "react-icons/fa";
 
 export default function FooterWithLogo() {
   return (
+    <>
+    <div className="information">
+    <h2>Hours and Location</h2>
+      <h3>Dinner</h3>
+      <p>10pm</p>
+      <h3>Lunch</h3>
+      <p>Currently Closed</p>
+
+      <h2>Contact </h2>
+      <p> 604 232-0900</p>
+      <p>shoestringcafe@gmail.com</p>
+      
+      <h2>Reservations</h2>
+      <p> Please call our phone number to make reservations.</p>
+    </div>
     <footer className="text-center text-lg-start footer main-colour-text">
       <Container className="text-center">
         <Row>
@@ -33,5 +48,6 @@ export default function FooterWithLogo() {
         </Row>
       </Container>
     </footer>
+    </>
   );
 }

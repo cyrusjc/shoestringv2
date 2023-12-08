@@ -2,7 +2,9 @@
 @use "../../styles/partials/mixins" as *;
 
 .wrapper {
-  background: url(../../assets/images/temp3.jpg);
+  background: url(../../assets/images/pic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -10,13 +12,53 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  padding: 1rem;
+  padding: 2rem;
   color: white;
+  gap: 1rem;
+  width: 100%;
 
   &__heading {
+    font-size: 2rem;
     font-family: "Babas Neue";
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+    width: 70%;
+    border-bottom: white solid 1px;
+    padding-bottom: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__button {
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: white solid 1px;
   }
 }
+
+// .information {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   height: 100vh;
+//   padding: 2rem;
+//   color: white;
+//   gap: 1rem;
+//   width: 100%;
 
 // .landing {
 //   width: 100%;
