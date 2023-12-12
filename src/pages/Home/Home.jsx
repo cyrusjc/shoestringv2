@@ -1,74 +1,62 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
-
+import React from "react";
 import "./Home.scss";
-import "../../styles/_global.scss";
-
-import Fluid from "../../components/Figure/Figure";
-import Blog from "../../components/Blog/Blog";
 import { Link } from "react-router-dom";
-import Contact from "../Contact/Contact";
 
 function Home() {
-  const blogPost = {
-    title: "ABOUT",
-    content:
-      "Welcome to our family-owned gem, Shoestring Cafe, nestled in the heart of Richmond, British Columbia.\n As a family, we have a passion for food and a commitment to providing our guests with a unique dining experience. Our menu is a culinary journey, featuring dishes crafted with fresh, locally-sourced ingredients. Each dish we serve is a celebration of our love for food and our desire to share this with our guests.",
-  };
-
-  const blogPost2 = {
-    title: "",
-    content:
-      "The ambiance at Shoestring Cafe is warm and inviting, reflecting our family’s hospitality. Whether you’re looking for a cozy spot for a meal or a venue to celebrate special occasions, Shoestring Cafe is the perfect place. Experience the joy of dining at Shoestring Cafe, where good food and great experiences come together in a family-friendly environment. We look forward to welcoming you to our family!",
-  };
-
-  const picture1 = "/temp3.jpg";
-  const picture2 = "/temp3.jpg";
-
   return (
     <>
-      <div>
-        <div className="landing">
-          <div className="background">
-            <Container>
-              <div className="content divCenter">
-                <h1>The Shoestring Café</h1>
-
-                <p>
-                  Welcome to Shoestring Cafe, a family owned restaurant nestled
-                  in the industrial area of Richmond. Our menu features dishes
-                  crafted with fresh, locally-sourced ingredients. Each dish we
-                  serve is a celebration of our love for food and our desire to
-                  share this with our guests.
-                </p>
-                <Link to="/Menu">
-                  <Button variant="secondary" className="menuButton">
-                    {" "}
-                    <p>View our menu</p>
-                  </Button>
-                </Link>
-              </div>
-            </Container>
+      <div className="wrapper">
+        <div className="container">
+          <h1 className="container__heading">The Shoestring Café</h1>
+          <p className="container__text">
+            Welcome to Shoestring Cafe, a family owned restaurant nestled in the
+            industrial area of Richmond. Our menu features dishes crafted with
+            fresh, locally-sourced ingredients. Each dish we serve is a
+            celebration of our love for food and our desire to share this with
+            our guests.
+          </p>
+          <Link to="/Menu">
+            <button className="container__button">View our menu</button>
+          </Link>
+        </div>
+        <div className="section">
+          <div className="section__container">
+            <h2 className="section__heading">Hours & Location</h2>
+            <div className="section__times">
+              <h3 className="section__subheading">Dinner:</h3>
+              <p className="section__paragraph section__hours">10pm</p>
+              <h3 className="section__subheading section__lunch">Lunch:</h3>
+              <p className="section__paragraph">Currently Closed</p>
+            </div>
+          </div>
+          <div className="section__container">
+            <h2 className="section__heading">Contact </h2>
+            <div className="section__info">
+              <p className="section__paragraph">604-232-0900</p>
+              <p className="section__paragraph">shoestringcafe@gmail.com</p>
+            </div>
+          </div>
+          <div className="section__container">
+            <h2 className="section__heading">Reservations</h2>
+            <p className="section__paragraph">
+              Please call our phone number to make reservations.
+            </p>
           </div>
         </div>
-      </div>
-      <div className="storyContainer divCenter maxWidth">
-        {/* <div className="aboutContainer">
-          <Fluid path={picture1} />
-        </div> */}
-        <div className="information">
-          <h3>Hours and Location</h3>
-          <div>
-            <h4>Dinner</h4>
-            <p> 10pm 10pm</p>
-            <h4>Lunch</h4>
-            <p> Currently Closed </p>
+        {/* <div className="information">
+          <h2>Hours and Location</h2>
+            <h3>Dinner</h3>
+            <p>10pm</p>
+            <h3>Lunch</h3>
+            <p>Currently Closed</p>
 
-            <h4>Contact </h4>
-            <p> 604 232-0900 | shoestringcafe@gmail.com</p>
-            <h3>Reservations</h3>
+            <h2>Contact </h2>
+            <p> 604 232-0900</p>
+            <p>shoestringcafe@gmail.com</p>
+            
+            <h2>Reservations</h2>
             <p> Please call our phone number to make reservations.</p>
-          </div>
-        </div>
+          </div> */}
       </div>
     </>
   );
