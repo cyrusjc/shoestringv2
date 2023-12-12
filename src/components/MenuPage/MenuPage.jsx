@@ -22,7 +22,9 @@ const MenuPage = ({ filePath, timePeriod }) => {
 
   return (
     <div className="">
-      <h2>{timePeriod}</h2>
+      <div className="menuType">
+        <h2>{timePeriod}</h2>
+      </div>
       {jsonData && jsonData.values && (
         <ul>
           {jsonData.values

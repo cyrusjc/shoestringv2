@@ -3,6 +3,10 @@
 
 .menu {
   color: $menu-text-item-color;
+  background-image: url("../../assets/images/pic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .menuBox {
@@ -24,6 +28,10 @@
       font-size: $menu-text-item-size;
       margin: 0;
     }
+  }
+
+  .menuType {
+    display: flex;
   }
 
   .menuItemDesc {
@@ -64,7 +72,8 @@
 
     padding-top: $menu-category-up-down-padding;
 
-    align-self: flex-start;
+    margin: 0 auto;
+    text-align: center;
     display: inline-block;
   }
 

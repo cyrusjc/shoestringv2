@@ -12,6 +12,9 @@ $SIDE-PADDING: 3pt;
   padding-bottom: $TOP-BOT-PADDING;
   padding-left: $SIDE-PADDING;
   padding-right: $SIDE-PADDING;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuBox {
@@ -24,6 +27,7 @@ $SIDE-PADDING: 3pt;
 
 .menuCategory {
   @include flexLeft(column);
+
   // font-size: $HEADER-FONT-SIZE;
 }
 
@@ -49,6 +53,12 @@ ul {
   border-radius: 0;
   p {
     margin: 0;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &.active {
