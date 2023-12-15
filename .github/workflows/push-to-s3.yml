@@ -1,0 +1,11 @@
+name: github-push-deploy
+run-name: ${{ github.actor }} is pushing code,
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+      - run: node -v
