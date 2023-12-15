@@ -1,5 +1,7 @@
 Website for Shoestring Cafe
 
+This react app is support by S3 with lambda triggers that update menu. The repo of the go lambda function can be found here: https://github.com/cyrusjc/shoestring-go-lambda
+
 items left:
 
     s/w choices:
