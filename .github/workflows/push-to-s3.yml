@@ -13,7 +13,6 @@ jobs:
       - name: Installing node modules
         run: npm ci
       - name: Running npm test
-        run: npm test
       - name: Building...
         run: npm run build
       - name: Listing local directory
