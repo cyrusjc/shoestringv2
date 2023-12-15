@@ -7,7 +7,7 @@ Route 53 -> Cloudflare -> AWS Certificate Manager -> S3 Bucket
 
 Domain name managed by namecheap.
 
-Automatically push repo to S3 on sucessful merge request with Github Actions.
+Automatically builds and uploads to S3 on sucessful merge request with Github Actions.
 
 items left:
 assets:
