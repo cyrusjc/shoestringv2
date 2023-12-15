@@ -12,7 +12,6 @@ jobs:
       - run: node -v
       - name: Installing node modules
         run: npm ci
-      - name: Running npm test
       - name: Building...
         run: npm run build
       - name: Listing local directory
