@@ -9,6 +9,8 @@ Domain name managed by namecheap.
 
 Automatically builds and uploads to S3 on sucessful merge request with Github Actions.
 
+This react app is support by S3 with lambda triggers that update menu. The repo of the go lambda function can be found here: https://github.com/cyrusjc/shoestring-go-lambda
+
 items left:
 assets:
 pics of resto
