@@ -18,8 +18,6 @@ jobs:
         run: npm ci
       - name: Building...
         run: npm run build
-      - name: Listing local directory
-        run: ls ${{ github.workspace }}
       - name: Pushing to S3...
         run: |
           aws s3 sync dist/ s3://shoestring-cafe-react
