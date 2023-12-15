@@ -10,7 +10,11 @@ jobs:
         with:
           node-version: "20"
       - run: node -v
-      - name: Installing node modules and building
-        run: npm install && npm run build
+      - name: Installing node modules
+        run: npm ci
+      - name: Running npm test
+        run: npm test
+      - name: Building...
+        run: npm run build
       - name: Listing local directory
         run: ls ${{ github.workspace }}
