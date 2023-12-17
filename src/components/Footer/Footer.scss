@@ -9,18 +9,42 @@
   min-width: 100%;
 }
 
+.footer-container {
+  font-family: "Inter";
+
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  justify-content: space-around;
+
+  max-width: $desktop-breakpoint;
+  &__main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+  }
+  &__element {
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    min-width: 250px;
+  }
+  &__heading {
+    padding: 0.25rem;
+  }
+  &__text {
+    padding: 0.25rem;
+    margin: 0;
+  }
+}
+
 .main-colour-text {
   color: white;
 }
 
-.title-row {
-  padding: 7px;
-}
-
-.icons-row {
-  padding: 7px;
-}
-
-.trademark-row {
-  padding: 7px;
+.trademark {
+  padding: 1rem;
+  text-align: center;
 }
