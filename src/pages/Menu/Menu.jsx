@@ -26,11 +26,21 @@ function Menu() {
             <p>Dinner</p>
           </Button>
 
-          <Button variant="secondary" className="menuButton">
+          <Button
+            variant="secondary"
+            className={`menuButton ${timePeriod === "Lunch" ? "active" : ""}`}
+            onClick={handleClick("/lunchMenu.json", "Lunch")}
+          >
             <p>Lunch </p>
           </Button>
 
-          <Button variant="secondary" className="menuButton">
+          <Button
+            variant="secondary"
+            className={`menuButton ${
+              timePeriod === "OpenTable" ? "active" : ""
+            }`}
+            onClick={handleClick("/opentableMenu.json", "Opentable 2024")}
+          >
             <p>Open Table</p>
           </Button>
         </div>

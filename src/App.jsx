@@ -7,7 +7,6 @@ import Home from "./pages/Home/Home";
 // import Contact from "./pages/Contact/Contact";
 import Menu from "./pages/Menu/Menu";
 
-
 function App() {
   return (
     <>
