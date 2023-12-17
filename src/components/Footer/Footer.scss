@@ -38,6 +38,23 @@
     padding: 0.25rem;
     margin: 0;
   }
+  &__main-heading {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  &__title1 {
+    font-family: "Allison";
+    padding: 0.25rem;
+    font-size: 4rem;
+  }
+  &__title2 {
+    font-family: "Bebas Neue";
+    padding: 0.25rem;
+    font-size: $footer-title-font-size;
+  }
 }
 
 .main-colour-text {

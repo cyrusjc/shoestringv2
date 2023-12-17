@@ -9,6 +9,10 @@ export default function FooterWithLogo() {
   return (
     <>
       <footer className="footer main-colour-text ">
+        <span className="footer-container__main-heading">
+          <h2 className="footer-container__title1">Shoestring</h2>
+          <h2 className="footer-container__title2"> Cafe</h2>
+        </span>
         <div className="text-center` footer-container">
           <Row className="footer-container__main">
             <Col className="footer-container__element">
