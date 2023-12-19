@@ -18,7 +18,7 @@ function Menu() {
     <>
       <div className="divCenter menu">
         <div className="menuBox">
-          <div className="buttonGroup">
+          {/* <div className="buttonGroup">
             <Button
               variant="secondary"
               className={`menuButton ${
@@ -46,9 +46,11 @@ function Menu() {
             >
               <p>Open Table</p>
             </Button>
-          </div>
+          </div> */}
 
-          <MenuPage filePath={filePath} timePeriod={timePeriod} />
+          {/* <MenuPage filePath={filePath} timePeriod={timePeriod} /> */}
+
+          <MenuPage filePath="/dinnerMenu.json" timePeriod="Menu" />
 
           <div className="spacer"></div>
         </div>

@@ -58,11 +58,12 @@
     font-size: $menu-category-text-size;
     font-size: $menu-category-text-size;
     font-weight: $menu-category-text-weight;
+    padding-bottom: 1rem;
   }
 
   h2 {
     font-family: $menu-title-font;
-    border-bottom: 1px solid white;
+
     font-size: $menu-title-font-size;
     font-weight: $menu-title-font-weight;
 
@@ -73,6 +74,18 @@
     display: inline-block;
   }
 
+  .menuType {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spacer-menu {
+    height: 1rem;
+    width: 4rem;
+    border-bottom: 1px solid white;
+  }
   h5 {
     font-family: $menu-title-font;
     // padding-bottom: $menu-category-up-down-padding-mobile;

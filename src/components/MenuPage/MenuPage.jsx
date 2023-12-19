@@ -24,6 +24,7 @@ const MenuPage = ({ filePath, timePeriod }) => {
     <div className="menuContainer">
       <div className="menuType">
         <h2>{timePeriod}</h2>
+        <div className="spacer-menu"></div>
       </div>
       {jsonData && jsonData.values && (
         <ul>
