@@ -18,21 +18,21 @@
 //   --side-padding: calc(var(--grid-val) * 2vw);
 // }
 
-// html,
-// body {
-//   font-family: "Inter";
+html,
+body {
+  //   font-family: "Inter";
 
-//   line-height: 1.5;
-//   font-weight: 400;
+  //   line-height: 1.5;
+  //   font-weight: 400;
 
-//   color: $PRIMARY-TEXT-COLOUR;
-//   background-color: $primary-bg-colour;
-//   place-items: center;
-//   min-width: 100%;
-//   min-height: 100%;
+  //   color: $PRIMARY-TEXT-COLOUR;
+  //   background-color: $primary-bg-colour;
+  //   place-items: center;
+  //   min-width: 100%;
+  //   min-height: 100%;
 
-//   background-image: url("pic.jpg");
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   background-size: cover;
-// }
+  background-image: url("../assets/images/pic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
