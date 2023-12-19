@@ -21,7 +21,7 @@ const MenuPage = ({ filePath, timePeriod }) => {
   }, [filePath]);
 
   return (
-    <div className="">
+    <div className="menuContainer">
       <div className="menuType">
         <h2>{timePeriod}</h2>
       </div>
@@ -31,7 +31,7 @@ const MenuPage = ({ filePath, timePeriod }) => {
             .filter((item) => item.length > 0)
             .map((item, index) => (
               <li key={index}>
-                {item.length > 2 ? (
+                {item.length > 1 ? (
                   <MenuItems
                     name={item[0]}
                     description={item[1]}

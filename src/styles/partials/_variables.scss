@@ -27,7 +27,7 @@ $menu-page-margin: 1rem;
 
 $menu-text-item-size: 1.125rem;
 $menu-text-item-weight: 600;
-$menu-text-desc-size: 2 rem;
+$menu-text-desc-size: 0.9rem;
 $menu-text-desc-weight: 300;
 $menu-text-price-size: 1rem;
 $menu-text-price-weight: 400;
@@ -38,10 +38,15 @@ $menu-category-text-weight: 100;
 $menu-title-font-size: 3rem;
 $menu-title-font-weight: 500;
 
-$menu-items-left-right-padding: 5rem;
-$menu-category-up-down-padding: 2rem;
+$menu-items-left-right-padding-mobile: 2rem;
+$menu-category-up-down-padding-mobile: 2rem;
+
+$menu-items-left-right-padding-tablet: 5rem;
+$menu-category-up-down-padding-tablet: 2rem;
 
 $menu-title-font: "SometypeMono";
 $menu-font: "Inter";
 
 $footer-title-font-size: 3rem;
+
+$menu-bottom-margin: 1rem;

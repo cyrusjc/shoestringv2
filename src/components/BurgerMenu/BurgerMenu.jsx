@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./BurgerMenu.scss";
+import { Link } from "react-router-dom";
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,10 +27,36 @@ const BurgerMenu = () => {
               &times;
             </span>
             <ul className="menu-items__list">
-              <li className="menu-items__items">Home</li>
-              <li className="menu-items__items">About</li>
-              <li className="menu-items__items">Menu</li>
-              <li className="menu-items__items">Hours & Location</li>
+              <li className="menu-items__items">
+                <Link
+                  to="/"
+                  title="home"
+                  className="burger-menu__link"
+                  onClick={toggleMenu}
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="menu-items__items">
+                <Link
+                  to="/Menu"
+                  title="menu"
+                  className="burger-menu__link"
+                  onClick={toggleMenu}
+                >
+                  Menu
+                </Link>
+              </li>
+              <li className="menu-items__items">
+                {/* <Link
+                  to="/About"
+                  title="about"
+                  className="burger-menu__link"
+                  onClick={toggleMenu}
+                >
+                  About
+                </Link> */}
+              </li>
             </ul>
           </div>
         </div>

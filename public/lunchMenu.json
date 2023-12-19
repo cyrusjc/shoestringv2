@@ -1,10 +1,12 @@
 {
-  "range": "dinner!A2:C70",
+  "range": "lunch!A2:C70",
   "majorDimension": "ROWS",
   "values": [
     [],
+    [],
+    [],
     [
-      "TESTING"
+      "Lunch Items "
     ],
     [
       "shoestring potatoes",
@@ -40,9 +42,7 @@
     [],
     [],
     [],
-    [
-      "pastas"
-    ],
+    [],
     [
       "pan fried linguine",
       "olive oil, jalapeno, chinese black bean, garlic (chicken or prawns)",
@@ -80,9 +80,7 @@
     ],
     [],
     [],
-    [
-      "mains"
-    ],
+    [],
     [
       "butter chicken",
       "spicy tomato curry, diced chicken breast, rice, naan, seasonal vegetables",
@@ -125,9 +123,7 @@
     ],
     [],
     [],
-    [
-      "desserts"
-    ],
+    [],
     [
       "orange flan",
       "egg custard, vanilla, caramel, triple sec",

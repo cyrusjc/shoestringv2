@@ -49,6 +49,8 @@ function Menu() {
           </div>
 
           <MenuPage filePath={filePath} timePeriod={timePeriod} />
+
+          <div className="spacer"></div>
         </div>
       </div>
     </>
