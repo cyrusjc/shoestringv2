@@ -8,10 +8,8 @@ $TOP-BOT-PADDING: 10pt;
 $SIDE-PADDING: 3pt;
 
 .menu {
-  padding-top: $TOP-BOT-PADDING;
   padding-bottom: 40pt;
-  padding-left: $SIDE-PADDING;
-  padding-right: $SIDE-PADDING;
+
   display: flex;
   justify-content: center;
   align-items: center;
