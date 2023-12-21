@@ -4,7 +4,7 @@
 
 .wrapper {
   width: 100vw;
-  height: 84vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,11 +14,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 2rem;
-  color: white;
+  text-align: center;
   justify-content: space-evenly;
+
   gap: 1rem;
+  padding: 2rem;
+
+  color: white;
+
+  max-width: $container-max-width;
+
+  &__spacer {
+    border-bottom: white solid 1px;
+    width: 150px;
+    height: 10px;
+    margin-bottom: 1rem;
+  }
 
   &__heading {
     font-size: 3rem;
@@ -26,9 +37,8 @@
     text-transform: uppercase;
     margin-bottom: 0;
     text-align: center;
-    width: 50%;
-    border-bottom: white solid 1px;
-    padding-bottom: 1rem;
+
+    padding-bottom: 0rem;
     letter-spacing: 0.2rem;
   }
 
@@ -39,7 +49,7 @@
     font-family: "Inter";
     text-align: center;
 
-    min-width: 60%;
+    width: 90%;
   }
 
   &__button {
@@ -122,111 +132,3 @@
     padding-left: 1rem;
   }
 }
-
-// .information {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   height: 100vh;
-//   padding: 2rem;
-//   color: white;
-//   gap: 1rem;
-//   width: 100%;
-
-// .landing {
-//   width: 100%;
-//   height: 100vh;
-// }
-
-// .background {
-//   background-image: url("/pic.jpg");
-//   background-size: cover;
-//   padding: 2rem;
-//   width: 100%;
-//   height: 100vh;
-//   object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-//   z-index: -1; /* Place it behind the content */
-// }
-
-// .content {
-//   padding: 20px;
-//   color: white;
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   /* Add more styles for your content */
-
-//   h1 {
-//     font-family: "Bebas Neue";
-//     font-size: 3rem;
-//     align-items: center;
-//     text-align: center;
-//     font-weight: 800;
-//     padding: 1rem;
-//   }
-
-//   p {
-//     font-family: "Inter";
-//     margin: auto;
-//     padding: 1px;
-//   }
-// }
-
-// .storyContainer {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-around;
-//   flex-wrap: wrap;
-//   align-items: center;
-
-//   margin: auto;
-//   padding: 2rem;
-
-//   p {
-//     font-family: "Markazi";
-//     font-size: 0.8 rem;
-//   }
-
-//   h3 {
-//     font-family: "Markazi";
-//     font-size: 2rem;
-//     font-weight: 500;
-//     font-optical-sizing: 72;
-//     text-align: center;
-//     padding-top: 1rem;
-//     margin-bottom: 0;
-//   }
-// }
-
-// .menuButton {
-//   background-color: black;
-//   color: white;
-//   font-size: 20px;
-//   padding: 10px 60px;
-//   border-radius: 5px;
-//   margin: 10px 0px;
-//   cursor: pointer;
-// }
-
-// .divCenter {
-//   text-align: center;
-// }
-
-// .aboutContainer {
-//   display: flex;
-//   padding: 2rem 0;
-//   align-items: left;
-//   justify-content: center;
-//   text-align: left;
-//   gap: 5rem;
-//   width: 100%;
-// }
-
-// .information {
-//   h3,
-//   p,
-//   h4 {
-//     font-family: Markazi;
-//   }
-// }

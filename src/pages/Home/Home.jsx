@@ -8,12 +8,12 @@ function Home() {
       <div className="wrapper">
         <div className="container">
           <h1 className="container__heading">The Shoestring Café</h1>
+          <div className="container__spacer" />
           <p className="container__text">
-            Welcome to Shoestring Cafe, a family owned restaurant nestled in the
-            industrial area of Richmond. Our menu features dishes crafted with
-            fresh, locally-sourced ingredients. Each dish we serve is a
-            celebration of our love for food and our desire to share this with
-            our guests.
+            We are a family-owned restaurant loctaed in Richmond, British
+            Columbia with a delectable menu that features fresh and
+            locally-sourced ingredients. Every dish we serve is a celebration of
+            our love for food and our desire to share our joy!
           </p>
           <Link to="/Menu">
             <button className="container__button">View our menu</button>

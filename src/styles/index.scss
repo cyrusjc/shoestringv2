@@ -2,34 +2,28 @@
 @import "./partials/fonts";
 @import "./typography";
 
-// :root {
-//   color-scheme: light dark;
-//   color: rgba(255, 255, 255, 0.87);
-//   background-color: #242424;
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 
-//   font-synthesis: none;
-//   text-rendering: optimizeLegibility;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   -webkit-text-size-adjust: 100%;
-
-//   --grid-unit: 25;
-//   --grid-val: calc(100 / var(--grid-unit));
-//   --side-padding: calc(var(--grid-val) * 2vw);
-// }
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
 
 html,
 body {
   //   font-family: "Inter";
-
   //   line-height: 1.5;
   //   font-weight: 400;
 
-  //   color: $PRIMARY-TEXT-COLOUR;
   background-color: $primary-bg-colour;
-  //   place-items: center;
-  //   min-width: 100%;
-  //   min-height: 100%;
+
+  overflow-x: clip;
+  // position: relative;
 
   background-image: url("../assets/images/pic.jpg");
   background-repeat: no-repeat;

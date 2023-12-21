@@ -6,7 +6,6 @@
   width: 100%;
   background-color: #1b1b1b;
   margin: 0;
-  min-width: 100%;
 }
 
 .footer-container {
@@ -18,7 +17,7 @@
   display: flex;
   justify-content: space-around;
 
-  max-width: $desktop-breakpoint;
+  max-width: $container-max-width;
 
   &__main {
     display: flex;

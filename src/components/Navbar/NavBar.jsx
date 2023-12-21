@@ -1,4 +1,5 @@
 import "./NavBar.scss";
+import logo from "../../assets/logos/landing_resized.png";
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -33,14 +34,10 @@ function NavBar() {
         }
       >
         <div className="primary-header__inner">
-          <span className="logo">
+          <span className="primary-header__logo">
             <Link to="/" title="home">
-              {/* <img
-            src={logo}
-            className="navbar__logo"
-            alt="logo"
-          /> */}
-              <h1 className="logo">Shoestring Café</h1>
+              <img src={logo} className="primary-header__logo" alt="logo" />
+              {/* <h1 className="logo">Shoestring Café</h1> */}
             </Link>
           </span>
           <div className="primary-header__nav-links">
