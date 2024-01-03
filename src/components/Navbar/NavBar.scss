@@ -1,12 +1,12 @@
+
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-//   padding: 0;
-//   font-family: AvenirNext LT Pro;
-// }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 a {
   text-decoration: none;
@@ -15,15 +15,12 @@ a {
 
 .primary-header {
   background-color: transparent;
-  transition: 0.4s ease-in;
-
-  top: 0;
-  position: sticky;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  transition: background-color 0.4s ease-in-out;
+  position: fixed; /* Change from sticky to fixed */
   width: 100%;
+  z-index: 1000; /* Add z-index to ensure it's above other content */
+
+
   &__inner {
     display: flex;
     flex-direction: row;
@@ -31,7 +28,7 @@ a {
     justify-content: space-between;
     max-width: $desktop-breakpoint;
     width: 100%;
-    padding: 1rem 2rem 0.5rem;
+    padding: 0.3rem 1.2rem;
   }
 
   &__logo {
@@ -45,6 +42,11 @@ a {
     padding: 1rem;
     font-family: "NunitoSans";
     font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: #f2f2f2;
+    }
   }
 
   &__bg {
@@ -52,7 +54,7 @@ a {
     padding-top: 0;
     padding-bottom: 0;
   }
-
+ 
   @media (max-width: $tablet-breakpoint) {
     &__buttons {
       display: none;
