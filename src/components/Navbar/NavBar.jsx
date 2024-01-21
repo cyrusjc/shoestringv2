@@ -47,8 +47,12 @@ function NavBar() {
             <Link to="/Menu" title="menu" className="primary-header__buttons">
               Menu
             </Link>
-            <Link to="/" title="home" className="primary-header__buttons">
-              About
+            <Link
+              to="/contact"
+              title="contact"
+              className="primary-header__buttons"
+            >
+              Contact Us
             </Link>
           </div>
           <div className="primary-header__hamburg">

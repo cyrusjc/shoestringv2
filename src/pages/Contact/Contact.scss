@@ -1,10 +1,70 @@
-.contactContainer {
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
+.container_contact {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  width: $desktop-breakpoint;
 
   margin: auto;
-  padding: 2rem;
+  font-family: "SometypeMono";
+
+  &_element {
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  &_forms {
+    background-color: #1b1b1b;
+    color: white;
+    width: 100%;
+
+    margin: auto;
+
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: auto;
+    justify-content: center;
+
+    &_split {
+      white-space: nowrap;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+
+      &_item {
+        white-space: nowrap;
+        width: 45%;
+      }
+    }
+
+    &_header {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: flex-start;
+    }
+    &_fields {
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      width: 100%;
+    }
+    &_field {
+      // margin: auto;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
+      // justify-content: center;
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      width: 100%;
+    }
+  }
 }
