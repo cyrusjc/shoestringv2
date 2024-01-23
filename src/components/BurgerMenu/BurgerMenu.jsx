@@ -48,14 +48,14 @@ const BurgerMenu = () => {
                 </Link>
               </li>
               <li className="menu-items__items">
-                {/* <Link
-                  to="/About"
-                  title="about"
+                <Link
+                  to="/contact"
+                  title="contact"
                   className="burger-menu__link"
                   onClick={toggleMenu}
                 >
-                  About
-                </Link> */}
+                  Contact Us!
+                </Link>
               </li>
             </ul>
           </div>

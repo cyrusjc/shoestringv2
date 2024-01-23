@@ -18,7 +18,7 @@ const Contact = () => {
     message: "",
   });
 
-  const [lambdaResponse, setLambdaResponse] = useState("Gud shit bro");
+  const [lambdaResponse, setLambdaResponse] = useState("Default");
 
   const [show, setShow] = useState(false);
 
@@ -172,7 +172,6 @@ const Contact = () => {
         <Modal
           show={show}
           onHide={handleClose}
-          centered
           className="container_contact_modal"
         >
           <Modal.Header closeButton>
