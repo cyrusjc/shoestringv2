@@ -4,16 +4,19 @@
 .container_contact {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+
   flex-wrap: wrap;
   align-items: center;
-  width: $desktop-breakpoint;
+  // width: $desktop-breakpoint;
 
   margin: auto;
   font-family: "SometypeMono";
 
   &_element {
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
+
     margin-bottom: 2rem;
   }
 
@@ -21,16 +24,19 @@
     background-color: #1b1b1b;
     color: white;
     width: 100%;
-
+    display: flex;
     margin: auto;
 
     padding: 4rem;
 
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: start;
     margin: auto;
     justify-content: center;
+    width: 100%;
+    max-width: 580px;
 
     &_split {
       white-space: nowrap;
