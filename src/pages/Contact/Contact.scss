@@ -1,6 +1,13 @@
 @import "../../styles/partials/mixins";
 @import "../../styles/partials/variables";
 
+.container_wrapper {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container_contact {
   display: flex;
   flex-direction: row;
@@ -71,6 +78,12 @@
       padding-top: 0.75rem;
       padding-bottom: 0.75rem;
       width: 100%;
+    }
+    @media (max-width: $tablet-breakpoint) {
+      padding: 2rem;
+      margin: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
     }
   }
 }
