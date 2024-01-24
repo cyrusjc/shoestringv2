@@ -1,3 +1,6 @@
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/variables";
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&display=swap");
 
 .burger-menu {
@@ -36,7 +39,7 @@
   .menu-items {
     width: 60%; // adjust the width of the menu as needed
     height: 100%;
-    background-color: #1b1b1b;
+    background-color: $primary-bg-colour;
     color: white; // adjust the text color of the menu
     padding-top: 5rem;
 

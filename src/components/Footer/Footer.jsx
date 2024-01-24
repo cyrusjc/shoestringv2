@@ -32,9 +32,18 @@ export default function FooterWithLogo() {
               <p className="footer-container__text">4611 No 6 Rd #180</p>
               <p className="footer-container__text">Richmond, BC V6V 1Z7</p>
               <div className="icons-row">
-                <Icons url="//www.google.com" icon={<FiInstagram />} />
-                <Icons url="//www.google.com" icon={<FaFacebook />} />
-                <Icons url="//www.google.com" icon={<FaYelp />} />
+                <Icons
+                  url="//https://www.instagram.com/shoestringcafe"
+                  icon={<FiInstagram />}
+                />
+                <Icons
+                  url="//https://www.facebook.com/p/Shoestring-Cafe-100070670794392/?locale=en_GB"
+                  icon={<FaFacebook />}
+                />
+                <Icons
+                  url="//https://www.yelp.ca/biz/shoestring-cafe-richmond"
+                  icon={<FaYelp />}
+                />
               </div>
             </Col>
           </Row>

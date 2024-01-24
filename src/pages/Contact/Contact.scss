@@ -24,13 +24,16 @@
     flex-wrap: wrap;
     margin: auto;
 
+    max-width: 600px;
+    width: 40vw;
+    min-width: 360px;
+
     margin-bottom: 2rem;
   }
 
   &_forms {
-    background-color: #1b1b1b;
+    background-color: $primary-bg-colour;
     color: white;
-    width: 100%;
     display: flex;
     margin: auto;
 

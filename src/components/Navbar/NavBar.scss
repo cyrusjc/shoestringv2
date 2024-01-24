@@ -48,7 +48,7 @@ a {
   }
 
   &__bg {
-    background-color: #1b1b1b;
+    background-color: $primary-bg-colour;
     // padding-top: 0;
     // padding-bottom: 0;
   }
@@ -58,6 +58,11 @@ a {
   }
 
   @media (max-width: $tablet-breakpoint) {
+    &__logo {
+      width: 165px;
+
+      color: black;
+    }
     &__hamburg {
       display: block;
     }

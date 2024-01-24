@@ -35,7 +35,7 @@ const Contact = () => {
     const form = event.currentTarget;
     setValidated(true);
 
-    if (formData.email && formData.name && formData.message) {
+    if (formData.email && formData.name && formData.message && formData.phone) {
       const fetchPromise = fetch(endpoint, {
         method: "POST",
         mode: "cors",
@@ -48,7 +48,9 @@ const Contact = () => {
           setLambdaResponse("Email has sent successfully!");
           handleShow();
         } else {
-          setLambdaResponse("Email has failed, please retry");
+          setLambdaResponse(
+            "Email has failed to send, please retry again later"
+          );
           handleShow();
         }
       });
@@ -131,7 +133,7 @@ const Contact = () => {
                   controlId="validationCustom04"
                   className="container_contact_forms_field"
                 >
-                  <Form.Label>Inquiries or comment</Form.Label>
+                  <Form.Label>Comments</Form.Label>
                   <Form.Control
                     as="textarea"
                     type="text"
