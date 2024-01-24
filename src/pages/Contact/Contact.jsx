@@ -62,10 +62,10 @@ const Contact = () => {
           <div className="container_contact_forms">
             <div className="container_contact_forms_header">
               <div className="container_contact_text">
-                <p>Have a question or need more information?</p>
+                <p>For questions or concerns</p>
               </div>
               <div className="container_contact_forms_heading">
-                <h1> Contact us!</h1>
+                <h1> Contact us</h1>
               </div>
             </div>
 
@@ -86,7 +86,6 @@ const Contact = () => {
                   <Form.Control
                     required
                     type="text"
-                    placeholder="Name"
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
@@ -98,7 +97,7 @@ const Contact = () => {
                   controlId="validationCustom02"
                   className="container_contact_forms_field"
                 >
-                  <Form.Label>Phone (optional)</Form.Label>
+                  <Form.Label>Phone</Form.Label>
                   <Form.Control
                     type="text"
                     placeholder=""
@@ -117,7 +116,6 @@ const Contact = () => {
                   <Form.Label>Email</Form.Label>
                   <Form.Control
                     type="email"
-                    placeholder="email@email.com"
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
@@ -133,12 +131,11 @@ const Contact = () => {
                   controlId="validationCustom04"
                   className="container_contact_forms_field"
                 >
-                  <Form.Label>What is your question?(*)</Form.Label>
+                  <Form.Label>Inquiries or comment</Form.Label>
                   <Form.Control
                     as="textarea"
                     type="text"
                     rows={3}
-                    placeholder="Question here!"
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
