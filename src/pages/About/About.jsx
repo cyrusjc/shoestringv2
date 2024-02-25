@@ -1,5 +1,5 @@
-import Blog from "../../components/Blog/Blog";
-import Fluid from "../../components/Figure/Figure";
+import Blog from "../../components/Blog/Blog.jsx";
+import Fluid from "../../components/Figure/Figure.jsx";
 
 import "./About.scss";
 

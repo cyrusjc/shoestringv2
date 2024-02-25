@@ -4,7 +4,7 @@ import logo from "../../assets/logos/landing_resized.png";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-import BurgerMenu from "../BurgerMenu/BurgerMenu";
+import BurgerMenu from "../BurgerMenu/BurgerMenu.jsx";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);

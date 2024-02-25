@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import NavBar from "./components/Navbar/NavBar";
-import Footer from "./components/Footer/Footer";
-import Home from "./pages/Home/Home";
+
+import NavBar from "./components/Navbar/NavBar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Home from "./pages/Home/Home.jsx";
 // import About from "./pages/About/Contact";
-import Contact from "./pages/Contact/Contact";
-import Menu from "./pages/Menu/Menu";
+import Contact from "./pages/Contact/Contact.jsx";
+import Menu from "./pages/Menu/Menu.jsx";
 
 function App() {
   return (

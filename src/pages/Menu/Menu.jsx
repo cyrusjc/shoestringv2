@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Container } from "react-bootstrap";
 
 import "./Menu.scss";
-import MenuPage from "../../components/MenuPage/MenuPage";
+import MenuPage from "../../components/MenuPage/MenuPage.jsx";
 
 function Menu() {
   const [filePath, setFilePath] = useState("/dinnerMenu.json");
