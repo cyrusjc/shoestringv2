@@ -33,15 +33,15 @@ export default function FooterWithLogo() {
               <p className="footer-container__text">Richmond, BC V6V 1Z7</p>
               <div className="icons-row">
                 <Icons
-                  url="//https://www.instagram.com/shoestringcafe"
+                  url="//www.instagram.com/shoestringcafe"
                   icon={<FiInstagram />}
                 />
                 <Icons
-                  url="//https://www.facebook.com/p/Shoestring-Cafe-100070670794392/?locale=en_GB"
+                  url="//www.facebook.com/p/Shoestring-Cafe-100070670794392/?locale=en_GB"
                   icon={<FaFacebook />}
                 />
                 <Icons
-                  url="//https://www.yelp.ca/biz/shoestring-cafe-richmond"
+                  url="//www.yelp.ca/biz/shoestring-cafe-richmond"
                   icon={<FaYelp />}
                 />
               </div>
