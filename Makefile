@@ -1,7 +1,11 @@
-all: build ship invalidate clean
+all: build ship clean_bucket invalidate clean
 
 build:
 	npm run build
+
+clean_bucket:
+	aws s3 rm --recursive s3://shoestring-cafe-react	
+
     
 ship:
 	aws s3 sync dist/ s3://shoestring-cafe-react

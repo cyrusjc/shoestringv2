@@ -20,9 +20,14 @@ jobs:
         run: npm ci
       - name: Building...
         run: npm run build
+      - name: Cleaning bucket...
+        run: aws s3 rm --recursive s3://shoestring-cafe-react
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
+          AWS_DEFAULT_REGION: "us-west-2"
       - name: Pushing to S3...
-        run: |
-          aws s3 sync dist/ s3://shoestring-cafe-react
+        run: aws s3 sync dist/ s3://shoestring-cafe-react
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
@@ -32,3 +37,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
           AWS_DEFAULT_REGION: "us-west-2"
+
